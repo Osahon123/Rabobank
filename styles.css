@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    margin: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    width: 150px;
+}
+
+header nav {
+    margin-left: -325px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+header div {
+    display: flex;
+}
+
+header div a {
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+header div a ion-icon {
+    display: none;
+}
+
+header div a:nth-child(2) {
+    color: rgb(0, 0, 66);
+    border: 1px solid rgb(0, 0, 66);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header div a:nth-child(2):hover {
+    color: rgb(58, 58, 219);
+    border: 1px solid rgb(58, 58, 219);
+}
+
+
+.outsidenav {
+    margin-left: 100px;
+    padding: 10px 0;
+    display: none;
+}
+
+.outsidenav a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    margin: 0 5px;
+}
+
+.outsidenav a:hover {
+    color: #0a18ac;
+}
+
+
+
+main {
+    margin: 0 100px;
+}
+
+main img {
+    width: 85%;
+}
+main section {
+    margin: 30px 50px;
+}
+main h1 {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    color: #0076fc;
+}
+main p {
+    margin-top: 10px;
+    max-width: 600px;
+    line-height: 1.3;
+    color: black;
+    font-weight: 600;
+}
+main .feats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .feats a {
+    max-width: 300px;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: rgb(116, 116, 116) 1px 1px 4px;
+    padding: 16px;
+    border-radius: 5px;
+    margin:10px;
+}
+main .feats a span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .feats a span div {
+    display: flex;
+}
+main .feats a span ion-icon:nth-child(1) {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #0a18ac;
+}
+main .feats a span h3 {
+    color: #0076fc;
+    font-weight: 400;
+    font-style: italic;
+}
+main .feats a p {
+    margin-top: 5px;
+    color: rgb(75, 75, 75);
+    font-weight: 400;
+}
+
+
+
+main .news {
+    margin-top: 20px;
+}
+main .news div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+main .news div a {
+    max-width: 300px;
+    text-decoration: none;
+    margin: 10px 20px;
+    box-shadow: rgb(73, 73, 73) 1px 1px 4px;
+    border-radius: 10px;
+    transition: .4s;
+}
+main .news div a:hover {
+    scale: 1.1;
+    box-shadow: rgb(73, 73, 73) 2px 2px 4px;
+}
+main .news div a img {
+    width: 100%;
+}
+main .news div a h3 {
+    color: #0076fc;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px;
+}
+
+
+
+
+
+main .country div {
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .country div a {
+    text-decoration: none;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    padding: 40px 70px;
+    border-radius: 10px;
+    box-shadow: rgb(73, 73, 73) 1px 1px 4px;
+}
+main .country div a img {
+    width: 100px;
+    text-align: center;
+}
+main .country div a h3 {
+    font-size: 1em;
+    color: #0a18ac;
+}
+main .country div a h4 {
+    font-size: .7em;
+    color: #1b1b1b;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px) {
+    header {
+        margin: 10px;
+    }
+    header nav {
+        display: none;
+    }
+    .outsidenav {
+        display: initial;
+    }
+    main {
+        margin: 0 10px;
+    }
+    main img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .outsidenav {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    header div a {
+        margin: 0px;
+    }
+
+    header div a:nth-child(2) {
+        border: none;
+    }
+
+    header div a ion-icon {
+        display: initial;
+    }
+
+    header div a h3 {
+        display: none;
+    }
+
+    main section {
+        margin: 35px 10px;
+    }
+    
+}

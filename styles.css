@@ -18,14 +18,28 @@ header a img {
 }
 
 header nav {
-    margin-left: -325px;
+    margin-left: -305px;
 }
-
-header nav a {
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none
+}
+header nav ul li a {
     text-decoration: none;
     color: black;
     margin: 0 10px;
 }
+
+header nav ul li ul {
+    position: absolute;
+    display: none;
+}
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
 
 header div {
     display: flex;
@@ -41,18 +55,22 @@ header div a {
 
 header div a ion-icon {
     display: none;
+    font-size: 25px;
+    padding: 10px;
+    
 }
 
-header div a:nth-child(2) {
+header div .log {
     color: rgb(0, 0, 66);
     border: 1px solid rgb(0, 0, 66);
     padding: 10px 20px;
     border-radius: 5px;
+    transition: .4s;
 }
 
-header div a:nth-child(2):hover {
-    color: rgb(58, 58, 219);
-    border: 1px solid rgb(58, 58, 219);
+header div .log:hover {
+    color: #0076fc;
+    border: 1px solid #0076fc;
 }
 
 
@@ -111,6 +129,11 @@ main .feats a {
     padding: 16px;
     border-radius: 5px;
     margin:10px;
+    transition: 0.4s;
+}
+main .feats a:hover {
+    scale: 1.014;
+    box-shadow: rgb(73, 73, 73) 2px 2px 4px;
 }
 main .feats a span {
     display: flex;
@@ -154,11 +177,11 @@ main .news div a {
     margin: 10px 20px;
     box-shadow: rgb(73, 73, 73) 1px 1px 4px;
     border-radius: 10px;
-    transition: .4s;
+    transition: .7s;
 }
 main .news div a:hover {
-    scale: 1.1;
-    box-shadow: rgb(73, 73, 73) 2px 2px 4px;
+    scale: 1.014;
+    box-shadow: rgb(73, 73, 73) 3px 3px 4px;
 }
 main .news div a img {
     width: 100%;
@@ -177,7 +200,6 @@ main .news div a h3 {
 
 main .country div {
     margin-top: 20px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -191,6 +213,11 @@ main .country div a {
     padding: 40px 70px;
     border-radius: 10px;
     box-shadow: rgb(73, 73, 73) 1px 1px 4px;
+    transition: 0.4s;
+}
+main .country div a:hover {
+    scale: 1.014;
+    box-shadow: rgb(73, 73, 73) 2px 2px 4px;
 }
 main .country div a img {
     width: 100px;
@@ -209,6 +236,43 @@ main .country div a h4 {
 
 
 
+
+footer {
+    margin: 20px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: rgb(75, 75, 75) solid 1px;
+    padding-top: 15px;
+}
+
+footer div:nth-child(1) ul li a {
+    color: #1b1b1b;
+    margin: 0 5px;
+    text-decoration: none;
+    display: flex;
+}
+footer div:nth-child(1) ul {
+    display: flex;
+    list-style: none;
+}
+footer div:nth-child(1) ul li a:hover {
+    text-decoration: underline;
+    color: #0a18ac;
+}
+
+footer div a ion-icon {
+    color: #1b1b1b;
+    padding: 10px;
+    border: #1b1b1b 1px solid;
+    border-radius: 50%;
+    margin: 5px;
+    transition: .4s;
+}
+footer div a ion-icon:hover {
+    color: #fff;
+    background-color: #1b1b1b;
+}
 
 
 @media only screen and (max-width:1100px) {
@@ -232,17 +296,47 @@ main .country div a h4 {
     .outsidenav {
         margin-left: 10px;
     }
+
+
+
+    footer {
+        margin: 10px;
+    }
 }
+
+@media only screen and (max-width:760px) {
+    footer {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width:540px) {
+    footer div:nth-child(1) {
+        margin: 15px 0;
+    }
+    footer div:nth-child(1) ul {
+        display: block;
+    }
+}
+
 
 @media only screen and (max-width:440px) {
     header div a {
         margin: 0px;
     }
 
-    header div a:nth-child(2) {
-        border: none;
+    header div .log {
+        color: #1b1b1b;
+        background-color: #fff;
+        border: #1b1b1b solid 1px;
+        padding: 0px;
+        border-radius: 50%;
     }
-
+    header div .log:hover {
+        color: #ffffff;
+        background-color: #1b1b1b;
+    }
     header div a ion-icon {
         display: initial;
     }
@@ -254,5 +348,5 @@ main .country div a h4 {
     main section {
         margin: 35px 10px;
     }
-    
+
 }

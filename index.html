@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Home Rabobank Group - Rabobank</title>
 </head>
 
@@ -14,24 +15,33 @@
     <header>
         <a href="index.html"><img src="logo.png" alt="logo"></a>
         <nav>
-            <a href="">Products</a>
-            <a href="">Knowledge</a>
-            <a href="">Support</a>
-            <a href="">About us</a>
+            <ul>
+                <li>
+                    <a href="">Products</a>
+                    <ul class="dropdown">
+                        <li>Expand my business</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Knowledge</a>
+                </li>
+                <li>
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <a href="">About us</a>
+                </li>
+            </ul>
         </nav>
         <div>
-            <a href="">
-                <ion-icon name="search-outline"></ion-icon>
-                <h3 style="font-weight: 400;">Search</h3>
-            </a>
-            <a href="">
+            <a href="login.html" class="log">
                 <ion-icon name="person-outline"></ion-icon>
                 <h3>Login</h3>
             </a>
         </div>
     </header>
     <div class="outsidenav">
-        <a href="">Products</a>
+        <a href="profile.html">Products</a>
         <a href="">Knowledge</a>
         <a href="">Support</a>
         <a href="">About us</a>
@@ -142,7 +152,21 @@
     </main>
 
     <footer>
-
+        <div>
+            <ul>
+                <li><a href="">Conditions</a></li>
+                <li><a href="">Privacy statement</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Responsible Disclosure</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/rabobank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/rabobank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/rabobank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.twitter.com/rabobank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.youtube.com/user/rabobank"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
     </footer>
 
 </body>

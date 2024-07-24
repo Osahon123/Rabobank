@@ -1,0 +1,76 @@
+header div a {
+    background-color: #00085e;
+    border-radius: 50%;
+}
+header div a ion-icon {
+    color: #fff;
+}
+
+
+.container {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.swiper-wrapper {
+    position: relative;
+    max-width: 390px;
+    max-height: 250px;
+    background-color: #fff;
+}
+.swiper-slide {
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to top,#00085e, #3d4dff);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.swiper-slide p {
+    font-size: .7em;
+    color: #dee0ff;
+    letter-spacing: 1.4px;
+    font-weight: 200;
+}
+.swiper-slide h1 {
+    font-size: 1.9em;
+    font-style: normal;
+    color: #fff;
+}
+.swiper-slide h2 {
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 400;
+}
+.swiper-slide h3 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.swiper-slide span {
+    margin: 6px 0;
+}
+.swiper-slide span:nth-child(3) {
+    display: flex;
+}
+.swiper-slide span div {
+    margin-right: 5px;
+}
+
+
+
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 10px;
+    color: #fff;
+}

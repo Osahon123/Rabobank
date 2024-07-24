@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Home Rabobank Group - Rabobank</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Products</a>
+                    <ul class="dropdown">
+                        <li>Expand my business</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Knowledge</a>
+                </li>
+                <li>
+                    <a href="">Support</a>
+                </li>
+                <li>
+                    <a href="">About us</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <a href="login.html">
+                <ion-icon name="person-outline"></ion-icon>
+                <h3>Log out</h3>
+            </a>
+        </div>
+    </header>
+    <!-- <div class="outsidenav">
+        <a href="profile.html">Products</a>
+        <a href="">Knowledge</a>
+        <a href="">Support</a>
+        <a href="">About us</a>
+    </div> -->
+    <main>
+        <h1>Hi, (Client's name)</h1>
+        <section class="balance">
+            <div>
+                <img src="card.png">
+            </div>
+            <div>
+                <p>Account Balance</p>
+                <h2>$500.00</h2>
+            </div>
+        </section>
+        <section class="action">
+            <div><ion-icon name="cloud-upload-outline"></ion-icon><h3>Transfers</h3></div>
+            <div><ion-icon name="cloud-download-outline"></ion-icon><h3>Withdrawals</h3></div>
+            <div><ion-icon name="wallet-outline"></ion-icon><h3>Payment</h3></div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="">Conditions</a></li>
+                <li><a href="">Privacy statement</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Responsible Disclosure</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/rabobank"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/rabobank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/rabobank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.twitter.com/rabobank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.youtube.com/user/rabobank"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+    </footer>
+
+</body>
+<style>
+    main .balance {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .balance div {
+        flex-basis: 40%;
+        padding: 15px;
+    }
+    @media only screen and (max-width:440px) {
+        main .balance {
+            display: block;
+        }
+    }
+    main .action {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: rgb(75, 75, 75) 1px solid;
+        margin: 20px 0;
+        padding: 50px 0;
+    }
+    main .action div {
+        margin: 10px 15px;
+        padding: 1.5em 2em;
+        color: #fff;
+        display: grid;
+        place-items: center;
+        border-radius: 7px;
+        max-width: 280px;
+        min-width: 180px;
+        background-color: #0a18ac;
+    }
+
+</style>
+
+</html>

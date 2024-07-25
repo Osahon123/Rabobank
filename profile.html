@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="swiper-bundle.min.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/15fa915322.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Home Rabobank Group - Rabobank</title>
 </head>
@@ -19,7 +20,7 @@
         <div>
             <a>
                 <ion-icon name="person-outline"></ion-icon>
-                <h3>Log out</h3>
+
             </a>
         </div>
     </header>
@@ -90,18 +91,142 @@
             </div>
 
 
-            
-        </section>
-
-
-        <section>
-
 
         </section>
 
+        <section class="desktopview" id="desktopview">
+            <div class="viewtoggle">
+                <div class="desktop">
+                    <span>
+                        <p>CHECKINGS</p>
+                        <h1>$14,680.00</h1>
+                    </span>
+                    <span>
+                        <p>ACCOUNT NUMBER</p>
+                        <h2>**** 7759</h2>
+                    </span>
+                    <span>
+                        <div>
+                            <p>TOTAL CREDIT <br>
+                                JULY 2024
+                            </p>
+                            <h3>$0.00</h3>
+                        </div>
+                        <div>
+                            <p>TOTAL DEBIT <br>
+                                JULY 2024
+                            </p>
+                            <h3>$4.00</h3>
+                        </div>
+                    </span>
+                </div>
+                <div class="desktop">
+                    <span>
+                        <p>SAVINGS</p>
+                        <h1>$0.00</h1>
+                    </span>
+                    <span>
+                        <p>ACCOUNT NUMBER</p>
+                        <h2>**** 7759</h2>
+                    </span>
+                    <span>
+                        <div>
+                            <p>TOTAL CREDIT <br>
+                                JULY 2024
+                            </p>
+                            <h3>$0.00</h3>
+                        </div>
+                        <div>
+                            <p>TOTAL DEBIT <br>
+                                JULY 2024
+                            </p>
+                            <h3>$0.00</h3>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
 
+        <section class="transfer">
+            <div class="row">
+                <a href="">
+                    <i class="fa-solid fa-share-from-square" id="icon"></i>
+                    <h3>Wire <br> Transfer</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-share-from-square" id="icon"></i>
+                    <h3>Local <br> Transfer</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-share-from-square" id="icon"></i>
+                    <h3>Internal <br> Transfer</h3>
+                </a>
+            </div>
+            <div class="row">
+                <a href="">
+                    <i class="fa-solid fa-bitcoin-sign" id="icon"></i>
+                    <h3>Buy <br> Crypto</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-credit-card" id="icon"></i>
+                    <h3>Pay <br> Bills</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-user-plus" id="icon"></i>
+                    <h3>Add <br> Beneficiary</h3>
+                </a>
+            </div>
+            <div class="row">
+                <a href="">
+                    <i class="fa-solid fa-credit-card" id="icon"></i>
+                    <h3>Card <br> Deposit</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-bitcoin-sign" id="icon"></i>
+                    <h3>Crypto <br> Deposit</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-credit-card" id="icon"></i>
+                    <h3>Check <br>Deposit</h3>
+                </a>
+            </div>
+            <div class="row">
+                <a href="">
+                    <i class="fa-solid fa-list" id="icon"></i>
+                    <h3>Savings <br> Statement</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-list" id="icon"></i>
+                    <h3>Checkings <br> Statement</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-envelope" id="icon"></i>
+                    <h3>Rabobank <br>Alerts</h3>
+                </a>
+            </div>
+            <div class="row">
+                <a href="">
+                    <i class="fa-solid fa-money-bill" id="icon"></i>
+                    <h3>Rabobank <br>Loans</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-chart-line" id="icon"></i>
+                    <h3>Rabobank <br> Investments</h3>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-comment" id="icon"></i>
+                    <h3>Rabobank <br>Support</h3>
+                </a>
+            </div>
+        </section>
 
     </main>
+
+<a href="" class="customersupport">
+    <i class="fa-solid fa-comment" id="ikon"></i>
+</a>
+
+
 
     <footer>
         <div>
@@ -125,6 +250,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
+            grabCursor: true,
             spaceBetween: 30,
             loop: true,
             pagination: {

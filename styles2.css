@@ -4,6 +4,7 @@ header div a {
 }
 header div a ion-icon {
     color: #fff;
+    display: initial;
 }
 
 
@@ -23,7 +24,7 @@ header div a ion-icon {
 .swiper-slide {
     display: grid;
     place-items: center;
-    background-image: linear-gradient(to top,#00085e, #3d4dff);
+    background-image: linear-gradient(to top,#00053a, #37409c);
     border-radius: 10px;
     padding: 15px 30px;
 }
@@ -31,7 +32,7 @@ header div a ion-icon {
     font-size: .7em;
     color: #dee0ff;
     letter-spacing: 1.4px;
-    font-weight: 200;
+    font-weight: 500;
 }
 .swiper-slide h1 {
     font-size: 1.9em;
@@ -56,21 +57,159 @@ header div a ion-icon {
     display: flex;
 }
 .swiper-slide span div {
-    margin-right: 5px;
+    margin-right: 14px;
 }
 
 
 
 .nav-btn {
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.1);
-    opacity: 0;
+    opacity: .2;
 }
 
 .nav-btn::after,
 .nav-btn::before {
-    font-size: 10px;
+    color: #fff;
+ 
+}
+.swiper-pagination {
+    display: none;
+}
+
+
+
+
+.desktopview {
+    display: none;
+}
+.viewtoggle {
+    display: flex;
+    justify-content: center;
+}
+.desktop {
+    margin: 20px;
+    background-image: linear-gradient(to top,#00085e, #37409c);
+    border-radius: 10px;
+    padding: 15px 30px;
+    width: 390px;
+}
+.desktop span:nth-child(3) {
+    display: flex;
+}
+.desktop p {
+    font-size: .7em;
+    color: #dee0ff;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+}
+.desktop h1 {
+    font-size: 1.9em;
+    font-style: normal;
     color: #fff;
 }
+.desktop h2 {
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 400;
+}
+.desktop h3 {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.desktop span {
+    margin: 6px 0;
+}
+.desktop span:nth-child(3) {
+    display: flex;
+}
+.desktop span div {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+.transfer .row {
+    display: flex;
+    justify-content: center;
+    border-top: #1b1b1b 1px solid;
+    padding: 15px 0;
+}
+.transfer .row a {
+    margin: 10px 15px;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    color: #1b1b1b;
+}
+.transfer .row a h3 {
+    margin-top: 10px;
+    font-size: .8em;
+    line-height: 1;
+}
+
+
+#icon {
+    width: 40px;
+    background-color:#00053a; 
+    color: #fff; 
+    padding: 12px; 
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:800px) {
+    .container {
+        display: none;
+    }
+    .desktopview {
+        display: initial;
+    }
+    
+}
+@media only screen and (min-width:600px) {
+    .transfer .row {
+        border-top: none;
+    }
+}
+
+.customersupport {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+}
+.customersupport #ikon {
+    color: #fff;
+    font-size: 30px;
+    padding: 18px;
+    border-radius: 50%;
+    background-color: #00053a;
+}
+
+
+
+
+
+
+

@@ -23,6 +23,7 @@
     </header>
     <main>
         <div class="container">
+            <h2>Account Login</h2>
             <form id="myfrom" method="post" name="from-my">
                 <div class="name_user">
                     <ion-icon name="person-outline" id="username_img"></ion-icon>
@@ -36,14 +37,16 @@
                 <input type="button" onclick="login ()" id="submit" value="Login">
             </form>
             <p id="text_show">_</p>
+            <a href="">Forgot password? <br> 
+                Contact Customer Support</a>
         </div>
     </main>
-
+    <h5 style="position: absolute; bottom: 10px; left: 10px;">©Rabobank inc</h5>
 </body>
 <style>
     * {
         background-color: rgb(230, 243, 255);
-
+        overflow-y: hidden;
     }
 
     header div a:nth-child(1) {
@@ -75,15 +78,26 @@
     }
 
     .container {
+        min-width: 400px;
         background-color: #fff;
         border-radius: 15px;
         display: grid;
         place-items: center;
         padding: 60px 20px;
-        margin: 20vh 33vw;
+        margin: 20vh 33vw 20vh 30vw;
         box-shadow: rgb(133, 133, 133) 2px 2px 5px;
     }
-
+    .container h2 {
+        text-align: center;
+        background-color: transparent;
+        margin-bottom: 15px;
+    }
+    .container a {
+        color: black;
+        text-align: center;
+        font-size: .8em;
+        background-color: transparent;
+    }
     form {
         background-color: #fff;
         display: grid;

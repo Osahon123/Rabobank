@@ -34,7 +34,7 @@
                     <ion-icon name="lock-closed-outline"></ion-icon>
                     <input type="password" id="password_user" placeholder="Password">
                 </div>
-                <input type="button" onclick="login ()" id="submit" value="Login">
+                <input type="button" onclick="login();logins()" id="submit" value="Login">
             </form>
             <p id="text_show">_</p>
             <a>Forgot password? <br> 
@@ -224,14 +224,61 @@
 
 
         }
-
-
-
-
-
     }
 
 
+
+
+
+
+
+    function logins() {
+        let username2 = document.getElementById("username").value;
+
+        let password22 = document.getElementById("password_user").value;
+
+        let text_show2 = document.getElementById("text_show");
+
+
+        let website_username = "deborahcooper"
+        let website_password = "445961"
+
+
+        if (username2 == website_username && password22 == website_password) {
+
+            window.location = "deborahcooperprofile.html"
+
+        }
+
+        else if (username == "" && password2 == "")
+
+
+            alert("Please fill out the fields")
+
+
+        else if (username2 == website_username && password22 !== website_password) {
+
+
+            document.getElementById("username").style.border = "2px solid green"
+            document.getElementById("password_user").style.border = "2px solid red"
+
+
+            text_show.innerHTML = "Incorrect password"
+        }
+
+
+
+        else if (username !== website_username && password2 == website_password) {
+
+            document.getElementById("username").style.border = "2px solid red"
+            document.getElementById("password_user").style.border = "2px solid green"
+
+
+            text_show.innerHTML = "Unknown username"
+
+
+        }
+    }
 </script>
 
 </html>
